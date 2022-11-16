@@ -1,26 +1,23 @@
-    <!-- BEGIN: Footer-->
+<footer class="page-footer footer footer-static footer-dark gradient-45deg-indigo-purple gradient-shadow navbar-border navbar-shadow">
+    <div class="footer-copyright">
+        <div class="container"><span>&copy; <?php echo date('Y'); ?> <a href="" target="_blank">Ponpes Sunan Pandanaran</a> All rights reserved.</span></div>
+    </div>
+</footer>
 
-    <footer class="page-footer footer footer-static footer-dark gradient-45deg-indigo-purple gradient-shadow navbar-border navbar-shadow">
-        <div class="footer-copyright">
-            <div class="container"><span>&copy; 2020 <a href="http://themeforest.net/user/pixinvent/portfolio?ref=pixinvent" target="_blank">PIXINVENT</a> All rights reserved.</span><span class="right hide-on-small-only">Design and Developed by <a href="https://pixinvent.com/">PIXINVENT</a></span></div>
-        </div>
-    </footer>
-
-    <!-- END: Footer-->
-    <!-- BEGIN VENDOR JS-->
-    <script src="admin/js/vendors.min.js"></script>
-    <!-- BEGIN VENDOR JS-->
-    <!-- BEGIN PAGE VENDOR JS-->
-    <!-- END PAGE VENDOR JS-->
-    <!-- BEGIN THEME  JS-->
-    <script src="admin/js/plugins.js"></script>
-    <script src="admin/js/search.js"></script>
-    <script src="admin/js/custom/custom-script.js"></script>
-    <script src="admin/js/scripts/customizer.js"></script>
-    <!-- END THEME  JS-->
-    <!-- BEGIN PAGE LEVEL JS-->
-    <script src="admin/js/scripts/advance-ui-carousel.js"></script>
-    <!-- END PAGE LEVEL JS-->
-    </body>
-
-    </html>
+<!-- END: Footer-->
+<!-- BEGIN VENDOR JS-->
+<script src="<?php echo base_url('/admin'); ?>/js/vendors.min.js"></script>
+<script src="<?php echo base_url('/admin'); ?>/js/vendors/data-tables/js/jquery.dataTables.min.js"></script>
+<script src="<?php echo base_url('/admin'); ?>/js/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js"></script>
+<script src="<?php echo base_url('/admin'); ?>/js/vendors/data-tables/js/dataTables.select.min.js"></script>
+<!-- BEGIN VENDOR JS-->
+<!-- BEGIN PAGE VENDOR JS-->
+<!-- END PAGE VENDOR JS-->
+<!-- BEGIN THEME  JS-->
+<script src="<?php echo base_url('/admin'); ?>/js/plugins.js"></script>
+<script src="<?php echo base_url('/admin'); ?>/js/search.js"></script>
+<script src="<?php echo base_url('/admin'); ?>/js/custom/custom-script.js"></script>
+<script src="<?php echo base_url('/admin'); ?>/js/scripts/customizer.js"></script>
+<!-- END THEME  JS-->
+<!-- BEGIN PAGE LEVEL JS-->
+<!-- END PAGE LEVEL JS-->

@@ -1,25 +1,15 @@
 <!-- BEGIN: SideNav-->
 <aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-light sidenav-active-square">
     <div class="brand-sidebar">
-        <h1 class="logo-wrapper"><a class="brand-logo darken-1" href="#"><img class="hide-on-med-and-down" src="admin/images/logo/materialize-logo-color.png" alt="materialize logo" /><img class="show-on-medium-and-down hide-on-med-and-up" src="app-assets/images/logo/materialize-logo.png" alt="materialize logo" /><span class="logo-text hide-on-med-and-down">Materialize</span></a><a class="navbar-toggler" href="#"><i class="material-icons">radio_button_checked</i></a></h1>
+        <h1 class="logo-wrapper"><a class="brand-logo darken-1" href="#"><img class="hide-on-med-and-down" src="<?php echo base_url('/logoppspa'); ?>.png" alt="materialize logos" /><img class="show-on-medium-and-down hide-on-med-and-up" src="<?php echo base_url('/logoppspa'); ?>.png" alt="materialize logos" /><span class="logo-text hide-on-med-and-down">PSB PPSPA</span></a><a class="navbar-toggler" href="#"><i class="material-icons">radio_button_checked</i></a></h1>
     </div>
     <ul class="sidenav sidenav-collapsible leftside-navigation collapsible sidenav-fixed menu-shadow" id="slide-out" data-menu="menu-navigation" data-collapsible="menu-accordion">
-        <li class="bold"><a href="#" class=" waves-effect waves-cyan">
+        <li class="bold"><a <?php ($menu_active == '' ? 'active' : ''); ?> href="#" class=" waves-effect waves-cyan">
                 <i class="material-icons">settings_input_svideo</i>
                 <span class="menu-title" data-i18n="Dashboard">Dashboard</span></a>
-            <!-- <div class="collapsible-body">
-                <ul class="collapsible collapsible-sub" data-collapsible="accordion">
-                    <li><a href="dashboard-modern.html"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Modern">Modern</span></a>
-                    </li>
-                    <li><a href="dashboard-ecommerce.html"><i class="material-icons">radio_button_unchecked</i><span data-i18n="eCommerce">eCommerce</span></a>
-                    </li>
-                    <li><a href="dashboard-analytics.html"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Analytics">Analytics</span></a>
-                    </li>
-                </ul>
-            </div> -->
         </li>
 
-        <li class="bold"><a href="#" class=" waves-effect waves-cyan ">
+        <li class="bold"><a <?php ($menu_active == '' ? 'active' : ''); ?> href="#" class=" waves-effect waves-cyan ">
                 <i class="material-icons">dvr</i><span class="menu-title" data-i18n="Templates">Daftarkan santri</span></a>
         </li>
         <li class="navigation-header"><a class="navigation-header-text">PENDAFTARAN</a>
@@ -30,9 +20,9 @@
                 <i class="material-icons">content_paste</i>
                 <span class="menu-title" data-i18n="Pages">Validasi data</span></a>
             <ul class="collapsible-body">
-                <li><a href="#"><i class="material-icons">radio_button_unchecked</i>
+                <li><a <?php ($menu_active == '' ? 'active' : ''); ?> href="#"><i class="material-icons">radio_button_unchecked</i>
                         <span data-i18n="Contact">Mts</span></a></li>
-                <li><a href="#"><i class="material-icons">radio_button_unchecked</i>
+                <li><a <?php ($menu_active == '' ? 'active' : ''); ?> href="#"><i class="material-icons">radio_button_unchecked</i>
                         <span data-i18n="Blog">MA</span></a></li>
             </ul>
         </li>
@@ -52,11 +42,11 @@
         <li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)"><i class="material-icons">content_paste</i><span class="menu-title" data-i18n="Pages">Laporan</span></a>
             <div class="collapsible-body">
                 <ul class="collapsible collapsible-sub" data-collapsible="accordion">
-                    <li><a href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Contact">Pendaftaran</span></a>
+                    <li><a <?php ($menu_active == '' ? 'active' : ''); ?> href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Contact">Pendaftaran</span></a>
                     </li>
-                    <li><a href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Blog">Kuota</span></a>
+                    <li><a <?php ($menu_active == '' ? 'active' : ''); ?> href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Blog">Kuota</span></a>
                     </li>
-                    <li><a href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Search">Pembayaran</span></a>
+                    <li><a <?php ($menu_active == 'tahunajaran' ? 'active' : ''); ?> href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Search">Pembayaran</span></a>
                     </li>
         </li>
     </ul>
@@ -68,9 +58,11 @@
     <li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)"><i class="material-icons">cast</i><span class="menu-title" data-i18n="Cards">Kelola</span></a>
         <div class="collapsible-body">
             <ul class="collapsible collapsible-sub" data-collapsible="accordion">
-                <li><a href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Cards">Calon santri baru</span></a>
+                <li><a <?php ($menu_active == '' ? 'active' : ''); ?> href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Cards">Calon santri baru</span></a>
                 </li>
-                <li><a href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Cards Advance">Data kamar</span></a>
+                <li><a <?php ($menu_active == '' ? 'active' : ''); ?> href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Cards Advance">Data kamar</span></a>
+                </li>
+                <li><a <?php ($menu_active == '' ? 'active' : ''); ?> href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Cards Advance">Tahun Ajaran</span></a>
                 </li>
             </ul>
         </div>
