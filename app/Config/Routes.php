@@ -41,14 +41,14 @@ $routes->get('/dashboard', 'Admin\DashboardController::index');
 
 // halaman admin
 $routes->get('/setting-tahunajaran', 'Admin\SettingController::index');
-$routes->get('/validasi-mts', 'Admin\SantriController::mtsindex');
-$routes->get('/validasi-ma', 'Admin\SantriController::maindex');
-$routes->get('/tahap-tes-mts', 'Admin\SantriController::mtstes');
-$routes->get('/tahap-tes-ma', 'Admin\SantriController::mates');
-$routes->get('/pembayaran-mts', 'Admin\SantriController::mtspembayaran');
-$routes->get('/pembayaran-ma', 'Admin\SantriController::mapembayaran');
-$routes->get('/kamar-mts', 'Admin\SantriController::mtskamar');
-$routes->get('/kamar-ma', 'Admin\SantriController::makamar');
+$routes->get('/validasi-mts', 'Admin\SantriController::validasi/MTs');
+$routes->get('/validasi-ma', 'Admin\SantriController::validasi/MA');
+$routes->get('/tahap-tes-mts', 'Admin\SantriController::tahaptes/MTs');
+$routes->get('/tahap-tes-ma', 'Admin\SantriController::tahaptes/MA');
+$routes->get('/pembayaran-mts', 'Admin\SantriController::pembayaran/MTs');
+$routes->get('/pembayaran-ma', 'Admin\SantriController::pembayaran/MA');
+$routes->get('/kamar-mts', 'Admin\SantriController::kamar/MTs');
+$routes->get('/kamar-ma', 'Admin\SantriController::kamar/MA');
 
 /*
  * --------------------------------------------------------------------
