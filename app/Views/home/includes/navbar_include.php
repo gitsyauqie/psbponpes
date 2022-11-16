@@ -12,9 +12,9 @@
               <button type="button" class="btn-close btn-close-white offcanvas-close offcanvas-nav-close" aria-label="Close"></button>
             </div>
             <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Tutorial</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="/">Beranda</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Informasi</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Download Browsur</a></li>
               
 
             </ul>
@@ -28,7 +28,7 @@
                 <a href="#" class="btn btn-sm btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#modal-01">Sign In</a>
               </li> -->
               <li class="nav-item d-none d-md-block">
-                <a href="#" class="btn btn-sm btn-primary rounded-pill" >Download Browsur</a>
+                <a href="/pendaftaran" class="btn btn-sm btn-primary rounded-pill" >Daftar Sekarang</a>
               </li>
               <li class="nav-item d-lg-none">
                 <div class="navbar-hamburger"><button class="hamburger animate plain" data-toggle="offcanvas-nav"><span></span></button></div>
