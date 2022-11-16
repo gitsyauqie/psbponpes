@@ -38,6 +38,9 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/dashboard', 'Admin\DashboardController::index');
 
+// halaman admin
+$routes->get('/setting-tahunajaran', 'Admin\SettingController::index');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -8,9 +8,6 @@ class DashboardController extends BaseController
 {
     public function index()
     {
-        return view('admin/layout/header')
-            . view('admin/layout/sidebar')
-            . view('admin/dashboard/index')
-            . view('admin/layout/footer');
+        return view('admin/layout/admin');
     }
 }
