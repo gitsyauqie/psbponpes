@@ -40,23 +40,50 @@
         <i class="navigation-header-icon material-icons">more_horiz</i>
       </li>
 
-      <li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)">
+      <li class="bold  <?php echo ($menu_dropdown_open == 'validasi' ? 'open active' : ''); ?>"><a class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)">
           <i class="material-icons">content_paste</i>
           <span class="menu-title" data-i18n="Pages">Validasi data</span></a>
         <ul class="collapsible-body">
-          <li><a <?php ($menu_active == '' ? 'active' : ''); ?> href="#"><i class="material-icons">radio_button_unchecked</i>
+          <li><a class='<?php echo ($menu_active == 'mts' ? 'active gradient-shadow teal' : ''); ?>' href="<?php echo base_url('validasi-mts'); ?>"><i class="material-icons">radio_button_unchecked</i>
               <span data-i18n="Contact">Mts</span></a></li>
-          <li><a <?php ($menu_active == '' ? 'active' : ''); ?> href="#"><i class="material-icons">radio_button_unchecked</i>
+          <li><a class='<?php echo ($menu_active == 'ma' ? 'active gradient-shadow teal' : ''); ?>' href="<?php echo base_url('validasi-ma'); ?>"><i class="material-icons">radio_button_unchecked</i>
               <span data-i18n="Blog">MA</span></a></li>
         </ul>
       </li>
 
-      <li class="bold"><a class="waves-effect waves-cyan " href="#"><i class="material-icons">check</i><span class="menu-title" data-i18n="ToDo">Tahap tes</span></a>
+      <li class="bold  <?php echo ($menu_dropdown_open == 'tahapTes' ? 'open active' : ''); ?>"><a class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)">
+          <i class="material-icons">check</i>
+          <span class="menu-title" data-i18n="Pages">Tahap tes</span></a>
+        <ul class="collapsible-body">
+          <li><a class='<?php echo ($menu_active == 'tahap_tes_mts' ? 'active gradient-shadow teal' : ''); ?>' href="<?php echo base_url('tahap-tes-mts'); ?>"><i class="material-icons">radio_button_unchecked</i>
+              <span data-i18n="Contact">Mts</span></a></li>
+          <li><a class='<?php echo ($menu_active == 'tahap_tes_ma' ? 'active gradient-shadow teal' : ''); ?>' href="<?php echo base_url('tahap-tes-ma'); ?>"><i class="material-icons">radio_button_unchecked</i>
+              <span data-i18n="Blog">MA</span></a></li>
+        </ul>
       </li>
-      <li class="bold"><a class="waves-effect waves-cyan " href="#"><i class="material-icons">format_list_bulleted</i><span class="menu-title" data-i18n="Kanban">Pembayaran</span></a>
+
+      <li class="bold  <?php echo ($menu_dropdown_open == 'pembayaran' ? 'open active' : ''); ?>"><a class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)">
+          <i class="material-icons">format_list_bulleted</i>
+          <span class="menu-title" data-i18n="Pages">Pembayaran</span></a>
+        <ul class="collapsible-body">
+          <li><a class='<?php echo ($menu_active == 'pembayaran_mts' ? 'active gradient-shadow teal' : ''); ?>' href="<?php echo base_url('pembayaran-mts'); ?>"><i class="material-icons">radio_button_unchecked</i>
+              <span data-i18n="Contact">Mts</span></a></li>
+          <li><a class='<?php echo ($menu_active == 'pembayaran_ma' ? 'active gradient-shadow teal' : ''); ?>' href="<?php echo base_url('pembayaran-ma'); ?>"><i class="material-icons">radio_button_unchecked</i>
+              <span data-i18n="Blog">MA</span></a></li>
+        </ul>
       </li>
-      <li class="bold"><a class="waves-effect waves-cyan " href="#"><i class="material-icons">content_paste</i><span class="menu-title" data-i18n="File Manager">Kamar</span></a>
+
+      <li class="bold  <?php echo ($menu_dropdown_open == 'kamar' ? 'open active' : ''); ?>"><a class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)">
+          <i class="material-icons">content_paste</i>
+          <span class="menu-title" data-i18n="Pages">Kamar</span></a>
+        <ul class="collapsible-body">
+          <li><a class='<?php echo ($menu_active == 'kamar_mts' ? 'active gradient-shadow teal' : ''); ?>' href="<?php echo base_url('kamar-mts'); ?>"><i class="material-icons">radio_button_unchecked</i>
+              <span data-i18n="Contact">Mts</span></a></li>
+          <li><a class='<?php echo ($menu_active == 'kamar_ma' ? 'active gradient-shadow teal' : ''); ?>' href="<?php echo base_url('kamar-ma'); ?>"><i class="material-icons">radio_button_unchecked</i>
+              <span data-i18n="Blog">MA</span></a></li>
+        </ul>
       </li>
+
 
 
       <li class="navigation-header"><a class="navigation-header-text">Lainnya </a><i class="navigation-header-icon material-icons">more_horiz</i>
@@ -66,11 +93,11 @@
       <li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)"><i class="material-icons">content_paste</i><span class="menu-title" data-i18n="Pages">Laporan</span></a>
         <div class="collapsible-body">
           <ul class="collapsible collapsible-sub" data-collapsible="accordion">
-            <li><a <?php ($menu_active == '' ? 'active' : ''); ?> href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Contact">Pendaftaran</span></a>
+            <li><a class='<?php echo ($menu_active == '' ? 'active gradient-shadow teal' : ''); ?>' href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Contact">Pendaftaran</span></a>
             </li>
-            <li><a <?php ($menu_active == '' ? 'active' : ''); ?> href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Blog">Kuota</span></a>
+            <li><a class='<?php echo ($menu_active == '' ? 'active gradient-shadow teal' : ''); ?>' href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Blog">Kuota</span></a>
             </li>
-            <li><a <?php ($menu_active == 'tahunajaran' ? 'active' : ''); ?> href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Search">Pembayaran</span></a>
+            <li><a class='<?php echo ($menu_active == 'tahunajaran' ? 'active gradient-shadow teal' : ''); ?>' href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Search">Pembayaran</span></a>
             </li>
       </li>
     </ul>
@@ -86,7 +113,7 @@
           </li>
           <li><a class='<?php ($menu_active == '' ? 'active gradient-shadow teal' : ''); ?>' href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Cards Advance">Data kamar</span></a>
           </li>
-          <li><a class='<?php echo ($menu_active == 'tahunajaran' ? 'active gradient-shadow teal' : ''); ?>' href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Cards Advance">Tahun Ajaran</span></a>
+          <li><a class='<?php echo ($menu_active == 'tahunajaran' ? 'active gradient-shadow teal' : ''); ?>' href="<?php echo base_url('setting-tahunajaran'); ?>"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Cards Advance">Tahun Ajaran</span></a>
           </li>
         </ul>
       </div>

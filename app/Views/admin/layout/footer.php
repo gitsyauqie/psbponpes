@@ -7,9 +7,9 @@
 <!-- END: Footer-->
 <!-- BEGIN VENDOR JS-->
 <script src="<?php echo base_url('/admin'); ?>/js/vendors.min.js"></script>
-<script src="<?php echo base_url('/admin'); ?>/js/vendors/data-tables/js/jquery.dataTables.min.js"></script>
-<script src="<?php echo base_url('/admin'); ?>/js/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js"></script>
-<script src="<?php echo base_url('/admin'); ?>/js/vendors/data-tables/js/dataTables.select.min.js"></script>
+<script src="<?php echo base_url('/admin'); ?>/vendors/data-tables/js/jquery.dataTables.min.js"></script>
+<script src="<?php echo base_url('/admin'); ?>/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js"></script>
+<script src="<?php echo base_url('/admin'); ?>/vendors/data-tables/js/dataTables.select.min.js"></script>
 <!-- BEGIN VENDOR JS-->
 <!-- BEGIN PAGE VENDOR JS-->
 <!-- END PAGE VENDOR JS-->
@@ -20,4 +20,6 @@
 <script src="<?php echo base_url('/admin'); ?>/js/scripts/customizer.js"></script>
 <!-- END THEME  JS-->
 <!-- BEGIN PAGE LEVEL JS-->
+
+<script src="<?php echo base_url('/admin'); ?>/js/scripts/data-tables.js"></script>
 <!-- END PAGE LEVEL JS-->
