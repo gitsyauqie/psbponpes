@@ -6,7 +6,7 @@
             <p class="lead fs-lg mb-7">di Laman Penerimaan Santri Baru Pondok Pesantren Sunan Pandanaran
 Jl. Kaliurang Km 12.5, Candi, Sardonoharjo, Ngaglik, Sleman, Yogyakarta, 55581</p>
             <div class="d-flex justify-content-center justify-content-lg-start" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900">
-              <span><a class="btn btn-lg btn-primary rounded me-2">Daftar</a></span>
+              <span><a href="/pendaftaran" class="btn btn-lg btn-primary rounded me-2"> Daftar Sekarang</a></span>
               <!-- <span><a class="btn btn-lg btn-green rounded">Free Trial</a></span> -->
             </div>
           </div>
