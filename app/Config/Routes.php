@@ -41,6 +41,14 @@ $routes->get('/dashboard', 'Admin\DashboardController::index');
 
 // halaman admin
 $routes->get('/setting-tahunajaran', 'Admin\SettingController::index');
+$routes->get('/validasi-mts', 'Admin\SantriController::mtsindex');
+$routes->get('/validasi-ma', 'Admin\SantriController::maindex');
+$routes->get('/tahap-tes-mts', 'Admin\SantriController::mtstes');
+$routes->get('/tahap-tes-ma', 'Admin\SantriController::mates');
+$routes->get('/pembayaran-mts', 'Admin\SantriController::mtspembayaran');
+$routes->get('/pembayaran-ma', 'Admin\SantriController::mapembayaran');
+$routes->get('/kamar-mts', 'Admin\SantriController::mtskamar');
+$routes->get('/kamar-ma', 'Admin\SantriController::makamar');
 
 /*
  * --------------------------------------------------------------------
