@@ -4,6 +4,6 @@
   <script src="<?= base_url('frontend/assets/js/plugins.js') ?>"></script>
   <script src="<?= base_url('frontend/assets/js/theme.js') ?>"></script>
 
-    <script src="<?= base_url('form/assets/js/jquery.steps.js')?>"></script>
-    <script src="<?= base_url('form/assets/js/jquery-ui.min.js')?>"></script>
-    <script src="<?= base_url('form/assets/js/main.js')?>"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+    <script src="<?= base_url('form/assets/card.js')?>"></script>
