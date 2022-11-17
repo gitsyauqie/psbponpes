@@ -10,7 +10,10 @@
            <h3 class="heading">Isi Formulir</h3>
            <p>Silahkan Isi Formulir dibawah ini</p>
          </div>
-             <form class="form-register" action="#" method="post">
+
+        
+       <form class="form-register" action="#" method="post">
+             
                <div id="form-total">
                  <!-- SECTION 1 -->
                     <h2>
@@ -674,7 +677,7 @@
                     </div>
                  </section>
                </div>
-             </form>
+               </form>
        </div>
       </div>
      
