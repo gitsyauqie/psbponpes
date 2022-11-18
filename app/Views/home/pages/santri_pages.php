@@ -19,7 +19,6 @@
                 action="/pendaftaran/simpan-data-santri"
                 enctype="multipart/form-data"
               >
-
               <?= csrf_field()?>
                 <div style="text-align: center">
                   <span class="step" id="step-1">1</span>
@@ -31,6 +30,18 @@
                 <div class="messages"></div>
                 <div class="row gx-4">
                   <h3 class="lead mb-2">Data Diri</h3>
+                  <div class="col-md-6 mb-4">
+              
+                    <div class="form-check ">
+                      <input class="form-check-input <?= ($validation->hasError('ref_jenjang_id') ? 'is-invalid' : '') ?>" type="radio" name="ref_jenjang_id" id="jenjang1" value="MTs"checked>
+                      <label class="form-check-label" for="jenjang1">MTs</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input <?= ($validation->hasError('ref_jenjang_id') ? 'is-invalid' : '') ?> " type="radio" name="ref_jenjang_id" id="jenjang2" value="MA">
+                      <label class="form-check-label" for="jenjang2"> MA </label>
+                    </div>
+                  </div>
+                  
                   <div class="col-md-6">
                   
                     <div class="form-floating mb-4">
@@ -148,85 +159,40 @@
                     </div>
                   </div>
 
-                  <div class="col-md-6">
-                    <div class="form-select-wrapper mb-4">
-                      <select class="form-select <?= ($validation->hasError('gender') ? 'is-invalid' : '') ?>" id="form-select" name="gender">
-                        <option  value="">
-                          Jenis Kelamin
-                        </option>
-                        <option value="L">Laki-Laki</option>
-                        <option value="P">Perempuan</option>
-                      </select>
-                      <div class="valid-feedback">Looks good!</div>
-                      <div class="invalid-feedback">
-                        Please select a department.
-                      </div>
+               
+                  <div class="col-md-6 mb-4">
+                    <p class="lead mb-2">Golongan Darah</p>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gol_darah" id="gol_darah_a" 
+                      value="A"
+                      >
+                      <label class="form-check-label" for="gol_darah_a"> A </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gol_darah" id="gol_darah_b" value="B">
+                      <label class="form-check-label" for="gol_darah_b"> B </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gol_darah" id="gol_darah_ab" value="AB">
+                      <label class="form-check-label" for="gol_darah_ab"> AB </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gol_darah" id="gol_darah_o" value="O">
+                      <label class="form-check-label" for="gol_darah_o"> O </label>
                     </div>
                   </div>
-
-                  <div class="col-md-6">
-                    <div class="form-floating mb-4">
-                      <input
-                        id="form_golongandarah"
-                        type="text"
-                        name="gol_darah"
-                        class="form-control <?= ($validation->hasError('gender') ? 'is-invalid' : '') ?>"
-                        placeholder="A"
-                        
-                      />
-                      <label for="form_golongandarah">Golongan Darah *</label>
-                      <div class="valid-feedback">Looks good!</div>
-                      <div class="invalid-feedback">
-                        Please provide a valid email address.
-                      </div>
+                  <div class="col-md-6 mb-4">
+                    <p class="lead mb-2">Jenis Kalamin</p>
+                    <div class="form-check  ">
+                      <input class="form-check-input <?= ($validation->hasError('gender') ? 'is-invalid' : '') ?>" type="radio" name="gender" id="gender1" checked value="Laki-Laki">
+                      <label class="form-check-label" for="gender1"> Laki - Laki </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input <?= ($validation->hasError('gender') ? 'is-invalid' : '') ?> " type="radio" name="gender" id="gender2" value="Perempuan">
+                      <label class="form-check-label" for="gender2"> Perempuan </label>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="form-floating mb-4">
-                      <input
-                        id="form_tgl_daftar"
-                        type="date"
-                        name="tgl_daftar"
-                        class="form-control <?= ($validation->hasError('tgl_daftar') ? 'is-invalid' : '') ?>"
-                        
-                      />
-                      <label for="form_tgl_daftar">Tanggal Daftar *</label>
-                      <div class="valid-feedback">Looks good!</div>
-                      <div class="invalid-feedback">
-                        Tanggal Harus Di isi.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-select-wrapper mb-4">
-                      <select class="form-select " id="form-select" name="ref_jenjang_id">
-                        <option selected disabled value="">
-                          Jenjang
-                        </option>
-                        <option value="L">SMK</option>
-                        <option value="P">SMP</option>
-                      </select>
-                      <div class="valid-feedback">Looks good!</div>
-                      <div class="invalid-feedback">
-                        Please select a department.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-select-wrapper mb-4">
-                      <select class="form-select" id="form-select" name="ref_jenispendaftaran_id" >
-                        <option selected disabled value="">
-                          Jenis Pendaftaran
-                        </option>
-                        <option value="L">Prestasi</option>
-                        <option value="P">Tahfidz</option>
-                      </select>
-                      <div class="valid-feedback">Looks good!</div>
-                      <div class="invalid-feedback">
-                        Please select a department.
-                      </div>
-                    </div>
-                  </div>
+                  
                   <div class="col-md-4 mb-3">
                     <img src="/img/default.jpg" alt="" class="img-thumbnail text-center imgPreview">
                   </div>

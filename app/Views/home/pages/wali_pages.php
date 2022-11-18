@@ -1,8 +1,5 @@
 <?= $this->extend('home/layouts/form_layout') ?>
-
-
 <?= $this->section('content') ?>
-
         <div class="container py-5 py-md-12" >
           <div class="row" >
             <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">

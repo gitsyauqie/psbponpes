@@ -36,15 +36,15 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/pendaftaran/step-1', 'FormController::santri');
-$routes->get('/pendaftaran/step-2', 'FormController::wali');
-$routes->get('/pendaftaran/step-3', 'FormController::pendidikan');
-$routes->get('/pendaftaran/step-4', 'FormController::prestasi');
+$routes->get('/pendaftaran/step-1', 'FormSantriController::santri');
+$routes->get('/pendaftaran/step-2', 'FormWaliController::wali');
+$routes->get('/pendaftaran/step-3', 'FormPendidikanController::pendidikan');
+$routes->get('/pendaftaran/step-4', 'FormPrestasiController::prestasi');
 
-$routes->post('/pendaftaran/simpan-data-santri', 'FormController::simpanSantri');
-$routes->post('/pendaftaran/simpan-data-wali', 'FormController::simpanWali');
-$routes->post('/pendaftaran/simpan-data-pedidikan', 'FormController::simpanPendidikan');
-$routes->post('/pendaftaran/simpan-data-prestasi', 'FormController::simpanPrestasi');
+$routes->post('/pendaftaran/simpan-data-santri', 'FormSantriController::simpanSantri');
+$routes->post('/pendaftaran/simpan-data-wali', 'FormWaliController::simpanWali');
+$routes->post('/pendaftaran/simpan-data-pedidikan', 'FormPedidikanController::simpanPendidikan');
+$routes->post('/pendaftaran/simpan-data-prestasi', 'FormPrestasiController::simpanPrestasi');
 
 
 

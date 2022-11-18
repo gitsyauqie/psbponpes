@@ -11,11 +11,10 @@
                 Silahkan di isi sesuai dengan data yang anda miliki.
               </p>
               <form
-                 id="myForm"
-                class="contact-form needs-validation"
+              class="contact-form "
                 method="POST"
-                action="/simpan"
-                autocomplete = "off"
+                action="/pendaftaran/simpan-data-prestasi"
+                enctype="multipart/form-data"
                 
               >
 
@@ -34,9 +33,9 @@
                     <div class="form-floating mb-4">
                       <input
                         id="form_prestasi"
-                        type="text"
+                        type="number"
                         name="prestasi"
-                        class="form-control"
+                        class="form-control <?= ($validation->hasError('prestasi') ? 'is-invalid' : '') ?>"
                         
                       />
                       <label for="form_prestasi">Prestasi *</label>
@@ -69,15 +68,15 @@
                     <div class="form-floating mb-4">
                       <input
                         id="form_juara"
-                        type="number"
+                        type="text"
                         name="juara"
-                        class="form-control"
+                        class="form-control <?= ($validation->hasError('juara') ? 'is-invalid' : '') ?>"
                         
                       />
                       <label for="form_juara">juara *</label>
                       <div class="valid-feedback">Looks good!</div>
                       <div class="invalid-feedback">
-                        Please enter your last name.
+                      <?= $validation->getError('juara') ;?>
                       </div>
                     </div>
                   </div>
@@ -89,13 +88,13 @@
                         id="file_prestasi"
                         type="file"
                         name="file_prestasi"
-                        class="form-control"
+                        class="form-control <?= ($validation->hasError('file_prestasi') ? 'is-invalid' : '') ?>"
                         
                       />
                       <label for="file_prestasi">File Prestasi *</label>
                       <div class="valid-feedback">Looks good!</div>
                       <div class="invalid-feedback">
-                        Please provide a valid email address.
+                        <?= $validation->getError('file_prestasi') ;?>
                       </div>
                     </div>
                   </div>
