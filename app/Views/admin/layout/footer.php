@@ -10,8 +10,10 @@
 <script src="<?php echo base_url('/admin'); ?>/vendors/data-tables/js/jquery.dataTables.min.js"></script>
 <script src="<?php echo base_url('/admin'); ?>/vendors/data-tables/extensions/responsive/js/dataTables.responsive.min.js"></script>
 <script src="<?php echo base_url('/admin'); ?>/vendors/data-tables/js/dataTables.select.min.js"></script>
+<script src="<?php echo base_url('/admin'); ?>/vendors/materialize-stepper/materialize-stepper.min.js"></script>
 <!-- BEGIN VENDOR JS-->
 <!-- BEGIN PAGE VENDOR JS-->
+<script src="<?php echo base_url('/admin'); ?>/vendors/dropify/js/dropify.min.js"></script>
 <!-- END PAGE VENDOR JS-->
 <!-- BEGIN THEME  JS-->
 <script src="<?php echo base_url('/admin'); ?>/js/plugins.js"></script>
@@ -22,4 +24,6 @@
 <!-- BEGIN PAGE LEVEL JS-->
 
 <script src="<?php echo base_url('/admin'); ?>/js/scripts/data-tables.js"></script>
+<script src="<?php echo base_url('/admin'); ?>/js/scripts/form-wizard.js"></script>
+<script src="<?php echo base_url('/admin'); ?>/js/scripts/form-file-uploads.js"></script>
 <!-- END PAGE LEVEL JS-->
