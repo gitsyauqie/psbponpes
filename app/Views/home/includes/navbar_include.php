@@ -2,7 +2,7 @@
       <nav class="navbar navbar-expand-lg classic transparent navbar-light">
         <div class="container flex-lg-row flex-nowrap align-items-center">
         <div class="navbar-brand w-100">
-            <a href="./index.html">
+            <a href="/">
               <img src="<?= base_url('frontend/assets/img/logo.png') ?>" srcset="./assets/img/logo@2x.png 2x" alt="" />
             </a>
           </div>
@@ -28,7 +28,7 @@
                 <a href="#" class="btn btn-sm btn-primary rounded-pill" data-bs-toggle="modal" data-bs-target="#modal-01">Sign In</a>
               </li> -->
               <li class="nav-item d-none d-md-block">
-                <a href="/pendaftaran" class="btn btn-sm btn-primary rounded-pill" >Daftar Sekarang</a>
+                <a href="/pendaftaran/step-1" class="btn btn-sm btn-primary rounded-pill" >Daftar Sekarang</a>
               </li>
               <li class="nav-item d-lg-none">
                 <div class="navbar-hamburger"><button class="hamburger animate plain" data-toggle="offcanvas-nav"><span></span></button></div>

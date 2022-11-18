@@ -8,13 +8,6 @@
   display: flex;
 }
 
-input {
-  margin: 10px 0;
-  padding: 10px;
-  box-sizing: border-box;
-  width: 100%;
-}
-
 .contact-form .step {
   height: 30px;
   width: 30px;

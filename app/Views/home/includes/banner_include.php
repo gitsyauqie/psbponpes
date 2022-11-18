@@ -5,7 +5,7 @@
         <h1 class="display-1 mb-5 mx-md-10 mx-lg-0">Pondok Pesantren Sunan Pandanaran <br /><span class="typer text-primary text-nowrap" data-delay="100" data-words="Selamat Datang!, Sugeng Rawuh!, Willkommen!, Welcome!"></span><span class="cursor text-primary" data-owner="typer"></span></h1>
         <p class="lead fs-lg mb-7">PSB Tahun Ajaran 2022/2023</p>
         <div class="d-flex justify-content-center justify-content-lg-start" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900">
-          <span><a href="/pendaftaran" class="btn btn-lg btn-primary rounded me-2"> Daftar Sekarang</a></span>
+          <span><a href="/pendaftaran/step-1" class="btn btn-lg btn-primary rounded me-2"> Daftar Sekarang</a></span>
           <!-- <span><a class="btn btn-lg btn-green rounded">Free Trial</a></span> -->
         </div>
       </div>
