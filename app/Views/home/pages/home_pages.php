@@ -75,14 +75,14 @@
             <p>https://sunanpandanaran.com/.</p>
           </div>
         </a> </li>
-      <li class="nav-item"> <a class="nav-link d-flex flex-row" data-bs-toggle="tab" href="https://mtssunanpandanaran.sch.id/">
+      <li class="nav-item"> <a class="nav-link d-flex flex-row active" data-bs-toggle="tab" href="https://mtssunanpandanaran.sch.id/">
           <div><img src="<?= base_url('frontend/assets/img/icons/shield.svg') ?>" class="svg-inject icon-svg icon-svg-md text-green me-4" alt="" /></div>
           <div>
             <h4 class="mb-1">Web MTs</h4>
             <p>https://mtssunanpandanaran.sch.id/.</p>
           </div>
         </a> </li>
-      <li class="nav-item"> <a class="nav-link d-flex flex-row" data-bs-toggle="tab" href="https://masunanpandanaran.sch.id/">
+      <li class="nav-item"> <a class="nav-link d-flex flex-row active" data-bs-toggle="tab" href="https://masunanpandanaran.sch.id/">
           <div><img src="<?= base_url('frontend/assets/img/icons/shield.svg') ?>" class="svg-inject icon-svg icon-svg-md text-red me-4" alt="" /></div>
           <div>
             <h4 class="mb-1">Web MA</h4>

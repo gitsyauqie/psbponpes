@@ -42,6 +42,7 @@ $routes->post('/simpan', 'FormController::simpan');
 
 
 $routes->get('/dashboard', 'Admin\DashboardController::index');
+$routes->get('/daftarkan-santri', 'Admin\SantriController::daftarkanSantri');
 
 // halaman admin
 $routes->get('/setting-tahunajaran', 'Admin\SettingController::index');
