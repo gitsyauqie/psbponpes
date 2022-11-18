@@ -6,12 +6,12 @@ function run(hideTab, showTab) {
     var currentTab = 0;
     x = $("#tab-" + hideTab);
     y = $(x).find("input");
-    for (i = 0; i < y.length; i++) {
-      if (y[i].value == "") {
-        $(y[i]).css("background", "#bde0fe");
-        return false;
-      }
-    }
+    // for (i = 0; i < y.length; i++) {
+    //   if (y[i].value == "") {
+    //     $(y[i]).css("background", "#e2eafc");
+    //     return false;
+    //   }
+    // }
   }
 
   for (i = 1; i < showTab; i++) {
