@@ -28,12 +28,12 @@
       <h1 class="logo-wrapper"><a class="brand-logo darken-1" href="#"><img class="hide-on-med-and-down" src="<?php echo base_url('/logoppspa'); ?>.png" alt="materialize logos" /><img class="show-on-medium-and-down hide-on-med-and-up" src="<?php echo base_url('/logoppspa'); ?>.png" alt="materialize logos" /><span class="logo-text hide-on-med-and-down">PSB PPSPA</span></a><a class="navbar-toggler" href="#"><i class="material-icons">radio_button_checked</i></a></h1>
     </div>
     <ul class="sidenav sidenav-collapsible leftside-navigation collapsible sidenav-fixed menu-shadow" id="slide-out" data-menu="menu-navigation" data-collapsible="menu-accordion">
-      <li class="bold"><a <?php echo ($menu_active == '' ? 'active gradient-shadow teal' : ''); ?> href="#" class=" waves-effect waves-cyan">
+      <li class="bold"><a class='<?php echo ($menu_active == '' ? 'active gradient-shadow teal' : ''); ?>' href="#" class=" waves-effect waves-cyan">
           <i class="material-icons">settings_input_svideo</i>
           <span class="menu-title" data-i18n="Dashboard">Dashboard</span></a>
       </li>
 
-      <li class="bold"><a <?php echo ($menu_active == '' ? 'active gradient-shadow teal' : ''); ?> href="#" class=" waves-effect waves-cyan ">
+      <li class="bold"><a <?php echo ($menu_active == 'daftarkan_santri' ? 'active gradient-shadow teal' : ''); ?> href="<?php echo base_url('/daftarkan-santri'); ?>" class=" waves-effect waves-cyan ">
           <i class="material-icons">dvr</i><span class="menu-title" data-i18n="Templates">Daftarkan santri</span></a>
       </li>
       <li class="navigation-header"><a class="navigation-header-text">PENDAFTARAN</a>

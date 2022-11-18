@@ -38,6 +38,7 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/pendaftaran', 'FormController::index');
 $routes->get('/dashboard', 'Admin\DashboardController::index');
+$routes->get('/daftarkan-santri', 'Admin\SantriController::daftarkanSantri');
 
 // halaman admin
 $routes->get('/setting-tahunajaran', 'Admin\SettingController::index');

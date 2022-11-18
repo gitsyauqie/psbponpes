@@ -6,6 +6,17 @@ use App\Controllers\BaseController;
 
 class SantriController extends BaseController
 {
+  public function daftarkanSantri()
+  {
+    $data['breadcrumbs_title'] = 'Dashboard';
+    $data['breadcrumbs_item'] = 'Administrator';
+    $data['breadcrumbs_item2'] = 'Daftarkan Santri';
+    $data['menu_active'] = 'daftarkan_santri';
+    $data['menu_dropdown_open'] = 'validasi';
+
+    return view('admin/santri/daftarkan_santri', $data);
+  }
+
   public function validasi($param)
   {
     $data['breadcrumbs_title'] = 'Pendaftaran';
