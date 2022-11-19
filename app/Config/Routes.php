@@ -36,6 +36,31 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->get('/pendaftaran/step-1', 'FormSantriController::santri');
+$routes->get('/pendaftaran/step-2', 'FormWaliController::wali');
+$routes->get('/pendaftaran/step-3', 'FormPendidikanController::pendidikan');
+$routes->get('/pendaftaran/step-4', 'FormPrestasiController::prestasi');
+
+$routes->post('/pendaftaran/simpan-data-santri', 'FormSantriController::simpanSantri');
+$routes->post('/pendaftaran/simpan-data-wali', 'FormWaliController::simpanWali');
+$routes->post('/pendaftaran/simpan-data-pedidikan', 'FormPedidikanController::simpanPendidikan');
+$routes->post('/pendaftaran/simpan-data-prestasi', 'FormPrestasiController::simpanPrestasi');
+
+
+
+$routes->get('/dashboard', 'Admin\DashboardController::index');
+$routes->get('/daftarkan-santri', 'Admin\SantriController::daftarkanSantri');
+
+// halaman admin
+$routes->get('/setting-tahunajaran', 'Admin\SettingController::index');
+$routes->get('/validasi-mts', 'Admin\SantriController::validasi/MTs');
+$routes->get('/validasi-ma', 'Admin\SantriController::validasi/MA');
+$routes->get('/tahap-tes-mts', 'Admin\SantriController::tahaptes/MTs');
+$routes->get('/tahap-tes-ma', 'Admin\SantriController::tahaptes/MA');
+$routes->get('/pembayaran-mts', 'Admin\SantriController::pembayaran/MTs');
+$routes->get('/pembayaran-ma', 'Admin\SantriController::pembayaran/MA');
+$routes->get('/kamar-mts', 'Admin\SantriController::kamar/MTs');
+$routes->get('/kamar-ma', 'Admin\SantriController::kamar/MA');
 
 /*
  * --------------------------------------------------------------------

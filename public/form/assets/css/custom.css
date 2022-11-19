@@ -1,0 +1,22 @@
+.tab p {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+.index-btn-wrapper {
+  margin-top: 20px;
+  display: flex;
+}
+
+.contact-form .step {
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  margin: 0 10px;
+  color: white;
+  background: #008000;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.25;
+  margin-bottom: 50px;
+}
