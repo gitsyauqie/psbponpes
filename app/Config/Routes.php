@@ -49,21 +49,19 @@ $routes->post('/pendaftaran/simpan-data-prestasi', 'FormPrestasiController::simp
 
 
 // ['filter' => 'role:admin,superadmin']
-$routes->group('dashboard', function($routes) {
-    $routes->get('/', 'Admin\DashboardController::index',['as' => 'halaman-dashboard']);
-    $routes->get('daftarkan-santri', 'Admin\SantriController::daftarkanSantri',['as' => 'daftarkan-santri']);
+    $routes->get('/dashboard', 'Admin\DashboardController::index',['as' => 'halaman-dashboard']);
+    $routes->get('/dashboard/daftarkan-santri', 'Admin\SantriController::daftarkanSantri',['as' => 'daftarkan-santri']);
 
     // halaman admin
-    $routes->get('setting-tahunajaran', 'Admin\SettingController::index',['as' => 'setting-tahunajaran']);
-    $routes->get('validasi-mts', 'Admin\SantriController::validasi/MTs',['as' =>'validasi-mts']);
-    $routes->get('validasi-ma', 'Admin\SantriController::validasi/MA',['as' => 'validasi-ma']);
-    $routes->get('tahap-tes-mts', 'Admin\SantriController::tahaptes/MTs',['as' => 'tahap-tes-mts']);
-    $routes->get('tahap-tes-ma', 'Admin\SantriController::tahaptes/MA',['as' => 'tahap-tes-ma']);
-    $routes->get('pembayaran-mts', 'Admin\SantriController::pembayaran/MTs',['as' => 'pembayaran-mts']);
-    $routes->get('pembayaran-ma', 'Admin\SantriController::pembayaran/MA',['as' => 'pembayaran-ma']);
-    $routes->get('kamar-mts', 'Admin\SantriController::kamar/MTs',['as' => 'kamar-mts']);
-    $routes->get('kamar-ma', 'Admin\SantriController::kamar/MA',['as' => 'kamar-ma']);
-});
+    $routes->get('/dashboard/setting-tahunajaran', 'Admin\SettingController::index',['as' => 'setting-tahunajaran']);
+    $routes->get('dashboard/validasi-mts', 'Admin\SantriController::validasi/MTs',['as' =>'validasi-mts']);
+    $routes->get('/dashboard/validasi-ma', 'Admin\SantriController::validasi/MA',['as' => 'validasi-ma']);
+    $routes->get('/dashboard/tahap-tes-mts', 'Admin\SantriController::tahaptes/MTs',['as' => 'tahap-tes-mts']);
+    $routes->get('/dashboard/tahap-tes-ma', 'Admin\SantriController::tahaptes/MA',['as' => 'tahap-tes-ma']);
+    $routes->get('/admin/pembayaran-mts', 'Admin\SantriController::pembayaran/MTs',['as' => 'pembayaran-mts']);
+    $routes->get('/dashboard/pembayaran-ma', 'Admin\SantriController::pembayaran/MA',['as' => 'pembayaran-ma']);
+    $routes->get('/dashboard/kamar-mts', 'Admin\SantriController::kamar/MTs',['as' => 'kamar-mts']);
+    $routes->get('/dashboard/kamar-ma', 'Admin\SantriController::kamar/MA',['as' => 'kamar-ma']);
 
 
 

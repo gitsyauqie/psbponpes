@@ -1,4 +1,4 @@
-<?= $this->extend('admin/auth/template/layout')?>
+<?= $this->extend('auth/layout/index')?>
 <?= $this->section('content')?>
 <div class="row">
       <div class="col s12">
