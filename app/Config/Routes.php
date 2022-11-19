@@ -48,19 +48,25 @@ $routes->post('/pendaftaran/simpan-data-prestasi', 'FormPrestasiController::simp
 
 
 
-$routes->get('/dashboard', 'Admin\DashboardController::index');
-$routes->get('/daftarkan-santri', 'Admin\SantriController::daftarkanSantri');
+// ['filter' => 'role:admin,superadmin']
+$routes->group('dashboard', function($routes) {
+    $routes->get('/', 'Admin\DashboardController::index',['as' => 'halaman-dashboard']);
+    $routes->get('daftarkan-santri', 'Admin\SantriController::daftarkanSantri',['as' => 'daftarkan-santri']);
 
-// halaman admin
-$routes->get('/setting-tahunajaran', 'Admin\SettingController::index');
-$routes->get('/validasi-mts', 'Admin\SantriController::validasi/MTs');
-$routes->get('/validasi-ma', 'Admin\SantriController::validasi/MA');
-$routes->get('/tahap-tes-mts', 'Admin\SantriController::tahaptes/MTs');
-$routes->get('/tahap-tes-ma', 'Admin\SantriController::tahaptes/MA');
-$routes->get('/pembayaran-mts', 'Admin\SantriController::pembayaran/MTs');
-$routes->get('/pembayaran-ma', 'Admin\SantriController::pembayaran/MA');
-$routes->get('/kamar-mts', 'Admin\SantriController::kamar/MTs');
-$routes->get('/kamar-ma', 'Admin\SantriController::kamar/MA');
+    // halaman admin
+    $routes->get('setting-tahunajaran', 'Admin\SettingController::index',['as' => 'setting-tahunajaran']);
+    $routes->get('validasi-mts', 'Admin\SantriController::validasi/MTs',['as' =>'validasi-mts']);
+    $routes->get('validasi-ma', 'Admin\SantriController::validasi/MA',['as' => 'validasi-ma']);
+    $routes->get('tahap-tes-mts', 'Admin\SantriController::tahaptes/MTs',['as' => 'tahap-tes-mts']);
+    $routes->get('tahap-tes-ma', 'Admin\SantriController::tahaptes/MA',['as' => 'tahap-tes-ma']);
+    $routes->get('pembayaran-mts', 'Admin\SantriController::pembayaran/MTs',['as' => 'pembayaran-mts']);
+    $routes->get('pembayaran-ma', 'Admin\SantriController::pembayaran/MA',['as' => 'pembayaran-ma']);
+    $routes->get('kamar-mts', 'Admin\SantriController::kamar/MTs',['as' => 'kamar-mts']);
+    $routes->get('kamar-ma', 'Admin\SantriController::kamar/MA',['as' => 'kamar-ma']);
+});
+
+
+
 
 /*
  * --------------------------------------------------------------------
