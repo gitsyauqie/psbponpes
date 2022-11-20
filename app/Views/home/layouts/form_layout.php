@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="<?= base_url('/logoppspa'); ?>.png">
+  <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('/logoppspa'); ?>.png">
   <title>Pondok Pesantren Sunan Pandanaran</title>
 
   <?= $this->include('home/includes/style_alternate') ?>

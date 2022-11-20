@@ -1,16 +1,5 @@
 <!DOCTYPE html>
-<!--
-Template Name: Materialize - Material Design Admin Template
-Author: PixInvent
-Website: http://www.pixinvent.com/
-Contact: hello@pixinvent.com
-Follow: www.twitter.com/pixinvents
-Like: www.facebook.com/pixinvents
-Purchase: https://themeforest.net/item/materialize-material-design-admin-template/11446068?ref=pixinvent
-Renew Support: https://themeforest.net/item/materialize-material-design-admin-template/11446068?ref=pixinvent
-License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
 
--->
 <html class="loading" lang="en" data-textdirection="ltr">
   <!-- BEGIN: Head-->
   <head>
@@ -29,16 +18,10 @@ License: You must have a valid license purchased only from themeforest(the above
       content="materialize, admin template, dashboard template, flat admin template, responsive admin template, eCommerce dashboard, analytic dashboard"
     />
     <meta name="author" content="ThemeSelect" />
-    <title>Users View | Materialize - Material Design Admin Template</title>
-    <link
-      rel="apple-touch-icon"
-      href="<?= base_url('admin')?>/app-assets/images/favicon/apple-touch-icon-152x152.png"
-    />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="<?= base_url('admin')?>/app-assets/images/favicon/favicon-32x32.png"
-    />
+    <title>Dashboard Santri</title>
+    <link rel="apple-touch-icon" href="<?= base_url('/logoppspa'); ?>.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('/logoppspa'); ?>.png">
+   
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"

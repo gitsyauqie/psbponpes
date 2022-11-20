@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html class="loading" lang="en" data-textdirection="ltr">
   <!-- BEGIN: Head-->
   <head>
@@ -18,16 +17,9 @@
       content="materialize, admin template, dashboard template, flat admin template, responsive admin template, eCommerce dashboard, analytic dashboard"
     />
     <meta name="author" content="ThemeSelect" />
-    <title>User Login | Materialize - Material Design Admin Template</title>
-    <link
-      rel="apple-touch-icon"
-      href="<?= base_url('admin')?>/app-assets/images/favicon/apple-touch-icon-152x152.png"
-    />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="<?= base_url('admin')?>/app-assets/images/favicon/favicon-32x32.png"
-    />
+    <title>User Login | Pondok Pesantren Sunan Pandanaran</title>
+    <link rel="apple-touch-icon" href="<?= base_url('/logoppspa'); ?>.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('/logoppspa'); ?>.png">
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -54,6 +46,12 @@
       rel="stylesheet"
       type="text/css"
       href="<?= base_url('admin')?>/app-assets/css/pages/login.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="<?= base_url('admin')?>/app-assets/css/pages/register.css"
     />
     <!-- END: Page Level CSS-->
     <!-- BEGIN: Custom CSS-->

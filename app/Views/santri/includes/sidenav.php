@@ -4,16 +4,16 @@
     >
       <div class="brand-sidebar">
         <h1 class="logo-wrapper">
-          <a class="brand-logo darken-1" href="index.html"
+          <a class="brand-logo darken-1" href="/santri"
             ><img
               class="hide-on-med-and-down"
-              src="<?= base_url('admin')?>/app-assets/images/logo/materialize-logo-color.png"
+              src="<?= base_url('/logoppspa'); ?>.png" style=" height:30px;"
               alt="materialize logo"
             /><img
-              class="show-on-medium-and-down hide-on-med-and-up"
-              src="<?= base_url('admin')?>/app-assets/images/logo/materialize-logo.png"
+              class="show-on-medium-and-down hide-on-med-and-up" style="height:30px;"
+              src="<?= base_url('/logoppspa'); ?>.png"
               alt="materialize logo"
-            /><span class="logo-text hide-on-med-and-down">Materialize</span></a
+            /><span class="logo-text hide-on-med-and-down">PPSPA</span></a
           ><a class="navbar-toggler" href="#"
             ><i class="material-icons">radio_button_checked</i></a
           >
