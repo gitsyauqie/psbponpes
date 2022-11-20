@@ -8,6 +8,14 @@ class DashboardController extends BaseController
 {
     public function index()
     {
-        return view('admin/layout/admin');
+        $data = [
+            'breadcrumbs_title' => 'Dashboard',
+            'breadcrumbs_item' => 'Administrator',
+            'breadcrumbs_item2' => 'Daftarkan Santri',
+            'menu_active' => 'daftarkan_santri',
+            'menu_dropdown_open' => 'validasi'
+        ];
+
+        return view('admin/layout/admin', $data);
     }
 }

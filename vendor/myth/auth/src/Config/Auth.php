@@ -16,7 +16,7 @@ class Auth extends BaseConfig
      *
      * @var string
      */
-    public $defaultUserGroup;
+    public $defaultUserGroup = 'santri';
 
     /**
      * --------------------------------------------------------------------
@@ -74,7 +74,9 @@ class Auth extends BaseConfig
      * @var array
      */
     public $views = [
-        'login'           => 'Myth\Auth\Views\login',
+        // 'login'           => 'Myth\Auth\Views\login',
+        // 'register'        => 'Myth\Auth\Views\register',
+        'login'           => '\App\Views\auth\login',
         'register'        => 'Myth\Auth\Views\register',
         'forgot'          => 'Myth\Auth\Views\forgot',
         'reset'           => 'Myth\Auth\Views\reset',
@@ -101,8 +103,8 @@ class Auth extends BaseConfig
      * @var string[]
      */
     public $validFields = [
-        'email',
-        'username',
+
+        'email','username',
     ];
 
     /**
@@ -186,7 +188,8 @@ class Auth extends BaseConfig
      *
      * @var string|null Name of the ActivatorInterface class
      */
-    public $requireActivation = 'Myth\Auth\Authentication\Activators\EmailActivator';
+    // public $requireActivation = 'Myth\Auth\Authentication\Activators\EmailActivator';
+    public $requireActivation = null;
 
     /**
      * --------------------------------------------------------------------
@@ -198,7 +201,8 @@ class Auth extends BaseConfig
      *
      * @var string|null Name of the ResetterInterface class
      */
-    public $activeResetter = 'Myth\Auth\Authentication\Resetters\EmailResetter';
+    // public $activeResetter = 'Myth\Auth\Authentication\Resetters\EmailResetter';
+    public $activeResetter = false;
 
     /**
      * --------------------------------------------------------------------
