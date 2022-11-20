@@ -14,16 +14,16 @@
 					<form action="<?= url_to('login') ?>" method="post">
 						<?= csrf_field() ?>
 
-<?php if ($config->validFields === ['email']): ?>
-						<div class="form-group">
-							<label for="login"><?=lang('Auth.email')?></label>
-							<input type="email" class="form-control <?php if (session('errors.login')) : ?>is-invalid<?php endif ?>"
-								   name="login" placeholder="<?=lang('Auth.email')?>">
-							<div class="invalid-feedback">
-								<?= session('errors.login') ?>
-							</div>
-						</div>
-<?php else: ?>
+						<?php if ($config->validFields === ['email']): ?>
+												<div class="form-group">
+													<label for="login"><?=lang('Auth.email')?></label>
+													<input type="email" class="form-control <?php if (session('errors.login')) : ?>is-invalid<?php endif ?>"
+															name="login" placeholder="<?=lang('Auth.email')?>">
+													<div class="invalid-feedback">
+														<?= session('errors.login') ?>
+													</div>
+												</div>
+						<?php else: ?>
 						<div class="form-group">
 							<label for="login"><?=lang('Auth.emailOrUsername')?></label>
 							<input type="text" class="form-control <?php if (session('errors.login')) : ?>is-invalid<?php endif ?>"

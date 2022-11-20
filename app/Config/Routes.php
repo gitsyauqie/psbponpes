@@ -49,7 +49,8 @@ $routes->post('/pendaftaran/simpan-data-prestasi', 'FormPrestasiController::simp
 
 
 // ['filter' => 'role:admin,superadmin']
-    $routes->get('/dashboard', 'Admin\DashboardController::index',['as' => 'halaman-dashboard']);
+    $routes->get('/dashboard', 'Admin\DashboardController::index',['as' => 'halaman-dashboard','filter'=> 'role:admin']);
+    $routes->get('/dashboard', 'Admin\DashboardController::index',['as' => 'halaman-dashboard','filter'=> 'role:admin']);
     $routes->get('/dashboard/daftarkan-santri', 'Admin\SantriController::daftarkanSantri',['as' => 'daftarkan-santri']);
 
     // halaman admin
@@ -65,6 +66,12 @@ $routes->post('/pendaftaran/simpan-data-prestasi', 'FormPrestasiController::simp
 
 
 
+
+    // Halaman Santri
+
+    $routes->get('/santri','Santri\DashboardController::index',['as' => 'dashboard-santri']);
+    $routes->get('/santri/data-santri','Santri\DataSantriController::index',['as' => 'data-santri']);
+    $routes->get('/santri/pengaturan-akun','Santri\SettingController::index',['as' => 'pengaturan-akun']);
 
 /*
  * --------------------------------------------------------------------

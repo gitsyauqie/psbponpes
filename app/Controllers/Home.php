@@ -8,4 +8,8 @@ class Home extends BaseController
     {
         return view('home/pages/home_pages');
     }
+    public function user()
+    {
+        return view('santri/index');
+    }
 }

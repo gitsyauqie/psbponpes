@@ -118,11 +118,32 @@
         </ul>
       </div>
     </li>
-    <li class="navigation-header"><a class="navigation-header-text">AKUN </a><i class="navigation-header-icon material-icons">more_horiz</i>
+
+    
+  
+
+    <li class="navigation-header"><a class="navigation-header-text">Pengaturan AKUN</a><i class="navigation-header-icon material-icons">more_horiz</i>
     </li>
-    <li class="bold"><a class="waves-effect waves-cyan " href="#"><i class="material-icons">person_outline</i><span class="menu-title" data-i18n="User Profile">Ubah sandi</span></a>
+    <li class="bold"><a class="waves-effect waves-cyan " href="#"><i class="material-icons">settings</i><span class="menu-title" data-i18n="User Profile">Pengaturan</span></a>
     </li>
-    <li class="bold"><a class="waves-effect waves-cyan " href="#"><i class="material-icons">person_outline</i><span class="menu-title" data-i18n="User Profile">Logout</span></a>
+
+    <li class="navigation-header"><a class="navigation-header-text">Roles & Management</a><i class="navigation-header-icon material-icons">more_horiz</i>
+    </li>
+    <li class="bold <?php echo ($menu_dropdown_open == 'kelola' ? 'open active' : ''); ?>"><a class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)"><i class="material-icons">collections_bookmark</i><span class="menu-title" data-i18n="Cards">Management</span></a>
+      <div class="collapsible-body">
+        <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+          <li><a  href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Cards">Auth Roles</span></a>
+          </li>
+          <li><a  href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Cards Advance">Auth Permission</span></a>
+          </li>
+          <li><a  href=""><i class="material-icons">radio_button_unchecked</i><span data-i18n="Cards Advance">Auth Grup Permission</span></a>
+          </li>
+          <li><a  href=""><i class="material-icons">radio_button_unchecked</i><span data-i18n="Cards Advance">Auth Grup User</span></a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="bold"><a class="waves-effect waves-cyan " href="<?= base_url('logout')?>"><i class="material-icons">person_outline</i><span class="menu-title" data-i18n="User Profile">Logout</span></a>
     </li>
 
     </ul>
