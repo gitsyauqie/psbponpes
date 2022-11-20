@@ -43,7 +43,7 @@ class RoleFilter extends BaseFilter implements FilterInterface
         }
 
         // throw new PermissionException(lang('Auth.notEnoughPrivilege'));
-        return redirect()->to('/santri');
+        return redirect()->to('/');
     }
 
     /**

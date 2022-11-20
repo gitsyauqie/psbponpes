@@ -3,12 +3,13 @@
         <div class="container flex-lg-row flex-nowrap align-items-center">
         <div class="navbar-brand w-100">
             <a href="/">
-              <img src="<?= base_url('frontend/assets/img/logo.png') ?>" srcset="./assets/img/logo@2x.png 2x" alt="" />
+           
+              <img src="<?= base_url('/logoppspa'); ?>.png" alt="" style="width: 80; height:60px;"/>
             </a>
           </div>
           <div class="navbar-collapse offcanvas-nav">
             <div class="offcanvas-header d-lg-none d-xl-none">
-              <a href=""><img src="<?= base_url('frontend/assets/img/logo-light.png')?>" srcset="<?= base_url('frontend/assets/img/logo-light@2x.png')?>" alt="" /></a>
+              <a href=""><img src="<?= base_url('/logoppspa'); ?>.png"  alt="" style="width: 80; height:80px;" /></a>
               <button type="button" class="btn-close btn-close-white offcanvas-close offcanvas-nav-close" aria-label="Close"></button>
             </div>
             <ul class="navbar-nav">

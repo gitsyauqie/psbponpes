@@ -77,7 +77,7 @@ class Auth extends BaseConfig
         // 'login'           => 'Myth\Auth\Views\login',
         // 'register'        => 'Myth\Auth\Views\register',
         'login'           => '\App\Views\auth\login',
-        'register'        => 'Myth\Auth\Views\register',
+        'register'        => '\App\Views\auth\register',
         'forgot'          => 'Myth\Auth\Views\forgot',
         'reset'           => 'Myth\Auth\Views\reset',
         'emailForgot'     => 'Myth\Auth\Views\emails\forgot',

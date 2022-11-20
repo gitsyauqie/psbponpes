@@ -69,9 +69,9 @@ $routes->post('/pendaftaran/simpan-data-prestasi', 'FormPrestasiController::simp
 
     // Halaman Santri
 
-    $routes->get('/santri','Santri\DashboardController::index',['as' => 'dashboard-santri']);
-    $routes->get('/santri/data-santri','Santri\DataSantriController::index',['as' => 'data-santri']);
-    $routes->get('/santri/pengaturan-akun','Santri\SettingController::index',['as' => 'pengaturan-akun']);
+    $routes->get('/santri','Santri\DashboardController::index',['as' => 'dashboard-santri','filter'=> 'role:santri']);
+    $routes->get('/santri/data-santri','Santri\DataSantriController::index',['as' => 'data-santri','filter'=> 'role:santri']);
+    $routes->get('/santri/pengaturan-akun','Santri\SettingController::index',['as' => 'pengaturan-akun','filter'=> 'role:santri']);
 
 /*
  * --------------------------------------------------------------------

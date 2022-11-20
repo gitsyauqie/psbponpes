@@ -126,6 +126,8 @@
     </li>
     <li class="bold"><a class="waves-effect waves-cyan " href="#"><i class="material-icons">settings</i><span class="menu-title" data-i18n="User Profile">Pengaturan</span></a>
     </li>
+    <li class="bold"><a class="waves-effect waves-cyan " href="#"><i class="material-icons">settings</i><span class="menu-title" data-i18n="Daftar User">Daftar User</span></a>
+    </li>
 
     <li class="navigation-header"><a class="navigation-header-text">Roles & Management</a><i class="navigation-header-icon material-icons">more_horiz</i>
     </li>

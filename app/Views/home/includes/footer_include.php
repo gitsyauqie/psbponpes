@@ -3,7 +3,7 @@
     <div class="row gy-6 gy-lg-0">
       <div class="col-md-4 col-lg-3">
         <div class="widget">
-          <img class="mb-4" src="<?= base_url('frontend/assets/img/logo-light.png') ?>" alt="" />
+          <img class="mb-4" src="<?= base_url('/logoppspa'); ?>.png" alt="" style="width: 80; height:60px;"/>
           <p class="mb-4">© <?php echo date('Y'); ?> Pondok Pesantren Pandanaran. <br class="d-none d-lg-block" />
             Jl. Kaliurang Km 12.5, Candi, Sardonoharjo, Ngaglik, Sleman, Yogyakarta, 55581.</p>
           <nav class="nav social social-white">
